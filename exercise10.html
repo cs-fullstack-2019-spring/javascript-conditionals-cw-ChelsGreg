@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+   var card1 = prompt("What's the number of the first card?");
+   var card2 = prompt("What's the number of the second card?");
+   var card3 = prompt("What's the number of the third card?");
+
+   card1 = parseInt(card1);
+   card2 = parseInt(card2);
+   card3 = parseInt(card3);
+
+   if(card1 + card2 + card3 === 21) {
+       console.log("BLACKJACK!");
+   }
+
+   else if(card1 + card2 + card3 > 21) {
+       console.log("BUST!");
+   }
+
+   else if(card1 + card2 + card3 < 21) {
+       console.log("The total is: " + (card1 + card2 + card3));
+   }
+
+
+
+</script>
+
+</body>
+</html>
